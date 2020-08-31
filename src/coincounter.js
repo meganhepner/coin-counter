@@ -1,18 +1,20 @@
-export default function coinCounter(cents) {
+export default function coinCounter(cents) { // input : 99 output : 3 quarters, 2 dimes, 4 pennies
   if (isNaN(cents)) {
     return;
   } 
-  if (cents = 0) {
-    return (quarters, dimes, nickels, pennies)
+  if (cents === 0) {
+    return (quarters, dimes, nickels, pennies) // or array
   } else {
   const quarters = Math.floor(cents/25);
-  return coinCounter(cents);
+  return coinCounter(cents );
   // cents % 25 = remainder
   // return coinCounter((cents - ())
   // return coinCounter(Math.floor(cents/25))
   }
 }
 
+
+const coinChanger = change("quarter");
 // money.split(".")
 
 // function coinCounter(cents) {
