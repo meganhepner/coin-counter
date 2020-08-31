@@ -1,12 +1,16 @@
 export default function coinCounter(cents) {
-  // if ( typeof money != "string") {
-  //   return;
-  // } 
+  if (isNaN(cents)) {
+    return;
+  } 
+  if (cents = 0) {
+    return (quarters, dimes, nickels, pennies)
+  } else {
   const quarters = Math.floor(cents/25);
-  return quarters;
+  return coinCounter(cents);
   // cents % 25 = remainder
-
-
+  // return coinCounter((cents - ())
+  // return coinCounter(Math.floor(cents/25))
+  }
 }
 
 // money.split(".")
@@ -23,5 +27,20 @@ export default function coinCounter(cents) {
 //      }
 //}
 
+// Some math?
 // quarters = Math.round(cents/25);
 // remaining change = cents % 25;
+
+
+// Closure?
+// const divider = (numberToDivideBy) => {
+//  return (numberToDivide) => {
+//    return numberToDivide / numberToDivideBy;
+//  }
+//}
+// const quarters = divider(25)
+// const dimes = divider(10)
+// const nickels = divider(5)
+// const pennies = divider(1)
+//
+// quarters(99)
